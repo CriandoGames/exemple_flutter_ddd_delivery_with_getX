@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:theme_dark_light_ddd_tdd_stud/theme/presentete/home/pages/produts/produts_screen.dart';
 
-import '../../theme.dart';
+
+import '../../theme/theme.dart';
 import 'controller/home_controller.dart';
+import 'pages/produts/produts_screen.dart';
+
 
 class HomeScreen extends GetView<HomeController> {
   const HomeScreen({Key? key}) : super(key: key);
