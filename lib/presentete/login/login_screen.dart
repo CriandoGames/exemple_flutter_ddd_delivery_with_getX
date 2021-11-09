@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:theme_dark_light_ddd_tdd_stud/presentete/components/button.dart';
 import 'package:theme_dark_light_ddd_tdd_stud/theme/theme.dart';
-
-
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -38,8 +37,9 @@ class LoginScreen extends StatelessWidget {
                         child: CircleAvatar(
                           radius: constraints.maxWidth * 0.12,
                           backgroundColor: Theme.of(context).canvasColor,
-                          
-                          child: Image.asset('assets/avatar.png',),
+                          child: Image.asset(
+                            'assets/avatar.png',
+                          ),
                         ),
                       ),
                     )
@@ -105,29 +105,9 @@ class LoginScreen extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.all(25),
-            child: InkWell(
-              onTap: () {},
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(14.0),
-                  gradient: LinearGradient(
-                    begin: Alignment.centerRight,
-                    end: Alignment.centerLeft,
-                    colors: colorsGradients,
-                  ),
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Text(
-                    'Entrar',
-                    style: Theme.of(context)
-                        .textTheme
-                        .button
-                        ?.copyWith(color: Colors.white),
-                    textAlign: TextAlign.center,
-                  ),
-                ),
-              ),
+            child: ButtonGeneric(
+              onPressed: () {},
+              text: 'Entrar',
             ),
           ),
         ],

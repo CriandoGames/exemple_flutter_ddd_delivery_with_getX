@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 
 import '../../theme/theme.dart';
 import 'controller/home_controller.dart';
+import 'pages/cart/cart.dart';
 import 'pages/produts/produts_screen.dart';
 
 
@@ -21,7 +22,7 @@ class HomeScreen extends GetView<HomeController> {
                 children: [
                   ProdutsScreen(),
                   Text('Index1 ${controller.index.value}'),
-                  Text('Index2 ${controller.index.value}'),
+                  CartScreen(),
                   Text('Index3 ${controller.index.value}'),
                   Text('Index4 ${controller.index.value}'),
                 ],

@@ -2,7 +2,7 @@ class Product {
   final String name;
   final String description;
   final String image;
-  final String price;
+  final int price;
   Product({
     required this.name,
     required this.description,

@@ -25,6 +25,7 @@ final _bordedark = OutlineInputBorder(
         color: ThemeColor.grey, width: 2, style: BorderStyle.solid));
 
 final themeLight = ThemeData(
+  scaffoldBackgroundColor: ThemeColor.white,
   appBarTheme:  AppBarTheme(
     color: ThemeColor.white,
     titleTextStyle: GoogleFonts.poppins(
@@ -33,14 +34,14 @@ final themeLight = ThemeData(
       fontWeight: FontWeight.bold,
     ),
   ),
-  canvasColor: ThemeColor.grey,
+  canvasColor: ThemeColor.white,
   primaryColor: ThemeColor.purple,
   colorScheme: const ColorScheme.light(
     primary: ThemeColor.white,
     onPrimary: ThemeColor.white,
     secondary: ThemeColor.veryLightGrey,
     onSecondary: ThemeColor.white,
-    surface: ThemeColor.grey,
+    surface: ThemeColor.white,
     onSurface: ThemeColor.white,
     background: ThemeColor.white,
   ),
@@ -76,7 +77,7 @@ final thenmeDark = ThemeData(
       fontWeight: FontWeight.bold,
     ),
   ),
-  canvasColor: ThemeColor.purple,
+  canvasColor: ThemeColor.grey,
   primaryColor: ThemeColor.green,
   scaffoldBackgroundColor: ThemeColor.dark,
   textTheme: GoogleFonts.poppinsTextTheme().apply(
@@ -84,13 +85,13 @@ final thenmeDark = ThemeData(
     displayColor: ThemeColor.green,
   ),
   colorScheme: const ColorScheme.light(
-    primary: ThemeColor.purple,
-    onPrimary: ThemeColor.purple,
+    primary: ThemeColor.grey,
+    onPrimary: ThemeColor.grey,
     secondary: Colors.transparent,
-    onSecondary: ThemeColor.purple,
-    surface: ThemeColor.purple,
-    onSurface: ThemeColor.purple,
-    background: ThemeColor.purple,
+    onSecondary: ThemeColor.grey,
+    surface: ThemeColor.grey,
+    onSurface: ThemeColor.grey,
+    background: ThemeColor.grey,
   ),
   inputDecorationTheme: InputDecorationTheme(
     contentPadding: EdgeInsets.zero,
