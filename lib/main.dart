@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:theme_dark_light_ddd_tdd_stud/presentete/login/login_screen.dart';
+
 
 
 
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: themeLight,
+      theme: thenmeDark,
       home: HomeScreen()
     );
   }

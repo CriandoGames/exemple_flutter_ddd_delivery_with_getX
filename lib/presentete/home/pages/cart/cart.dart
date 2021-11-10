@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'components/card_with_item.dart';
 import 'components/empty_cart.dart';
 
 class CartScreen extends StatelessWidget {
@@ -9,9 +10,13 @@ class CartScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: const Text('Shopping Cart'),
       ),
-      body: const EmptyCart(),
+      body: const CardWithItem(),
     );
   }
 }
+
+
+// EmptyCart()
